@@ -32,7 +32,7 @@ class App extends Component {
     } else {
       return (
         <View style={styles.container}>
-          <StatusBar style="dark"/>
+          <StatusBar backgroundColor="#09a6ff" style="light"/>
           <FlatList
             data={this.state.filmes}
             keyExtractor={(item) => item.id.toString()}
@@ -47,6 +47,7 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: "#ccc"
   },
 });
 
